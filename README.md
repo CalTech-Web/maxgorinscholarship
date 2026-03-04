@@ -67,17 +67,7 @@ Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (sub
 
 ## Contact Form Setup
 
-After Step 3 deploys the site, set these three environment variables in the Vercel project dashboard (Settings → Environment Variables):
-
-| Variable | Value |
-|---|---|
-| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) |
-| `CONTACT_EMAIL` | Client's email address (where leads are delivered) |
-| `FROM_EMAIL` | `onboarding@resend.dev` (works immediately, no domain setup needed) |
-
-After saving, trigger a redeploy so the variables take effect. The contact form API route reads these at runtime — no code changes needed.
-
-> To send from a branded address (e.g. `noreply@clientdomain.com`), the client's domain must be verified in the Resend dashboard first.
+After Step 3, register the new client domain in the centralized forms service. See [EMAIL.md](EMAIL.md) for full details.
 
 ---
 
@@ -150,6 +140,7 @@ Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (sub
 > - No unfilled placeholder text (grep for `[`, `TODO`, `PLACEHOLDER`, `Lorem`)
 > - Analytics tag present in page HTML
 > - All images load (no broken src attributes)
+> - Footer contains a "Powered by Caltechweb" link pointing to `https://caltechweb.com`
 >
 > Fix any issues found. Then do a final deploy:
 > `cd /Users/brandonhopkins/Projects/CLIENT_NAME/site && npx vercel --yes --prod --name CLIENT_NAME`
@@ -171,3 +162,4 @@ Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (sub
 | `agents/content-agent/` | Content creation agent |
 | `agents/seo-agent/` | SEO optimization agent |
 | `agents/pagespeed-agent/` | Performance optimization agent |
+| `EMAIL.md` | How contact forms and Resend email work across all clients |
