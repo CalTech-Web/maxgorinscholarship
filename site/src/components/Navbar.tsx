@@ -17,9 +17,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -27,13 +28,18 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5"
-          : "bg-white/80 backdrop-blur-md"
+          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold gradient-text hover:opacity-80 transition-opacity">
+        <div className="flex items-center justify-between h-18">
+          <Link
+            href="/"
+            className={`text-xl font-bold transition-colors duration-500 ${
+              scrolled ? "gradient-text" : "text-white"
+            }`}
+          >
             Max Gorin Scholarship
           </Link>
 
@@ -43,7 +49,11 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="relative text-sm font-medium text-foreground/65 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5 transition-all"
+                className={`relative text-sm font-medium px-3 py-2 rounded-lg transition-all duration-500 ${
+                  scrolled
+                    ? "text-foreground/65 hover:text-primary hover:bg-primary/5"
+                    : "text-white/80 hover:text-white hover:bg-white/10"
+                }`}
               >
                 {link.label}
               </a>
@@ -58,7 +68,11 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-foreground/65 hover:text-primary hover:bg-primary/5 transition-all"
+            className={`md:hidden p-2 rounded-lg transition-all ${
+              scrolled
+                ? "text-foreground/65 hover:text-primary hover:bg-primary/5"
+                : "text-white/80 hover:text-white hover:bg-white/10"
+            }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -89,7 +103,7 @@ export default function Navbar() {
           mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-xl">
+        <div className="bg-white/95 backdrop-blur-xl shadow-xl">
           <div className="px-4 py-5 space-y-1">
             {navLinks.map((link, i) => (
               <a
