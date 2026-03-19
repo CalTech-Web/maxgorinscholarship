@@ -19,7 +19,7 @@ export default function ApplicationForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...data,
-          _to: "FORM_RECEIVER_EMAIL",
+          _to: "scholarship@maxgorinscholarship.com",
           _subject: `New Scholarship Application from ${data.firstName} ${data.lastName}`,
           _from: "Max Gorin Scholarship",
         }),
