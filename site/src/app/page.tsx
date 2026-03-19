@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section - 3 column layout matching live site */}
+      {/* About Section - 3 column layout */}
       <section id="about" className="py-24 bg-section-bg relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-accent/5 to-transparent rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-primary/5 to-transparent rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -62,29 +62,29 @@ export default function Home() {
             </h2>
             <div className="accent-line mx-auto" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
-            {/* Column 1 - Text */}
-            <div className="space-y-6 animate-fade-in-left">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-white/50">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            {/* Column 1 - Text cards */}
+            <div className="flex flex-col gap-6 animate-fade-in-left">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-white/50 flex-1">
                 <p className="text-lg text-foreground/75 leading-relaxed">
                   Founded in 2021, the Max Gorin Scholarship was designed to award one lucky applicant $1,000 for their educational expenses.
                 </p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-white/50">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-white/50 flex-1">
                 <p className="text-lg text-foreground/75 leading-relaxed">
                   As an immigrant from Ukraine, scholarship founder Maxim Gorin grew up understanding the importance of serving his community, and for it to thrive, access to education is vital.
                 </p>
               </div>
             </div>
             {/* Column 2 - Image + Text */}
-            <div className="space-y-6 animate-fade-in-up delay-200">
-              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5">
+            <div className="flex flex-col gap-6 animate-fade-in-up delay-200">
+              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 flex-1">
                 <Image
                   src="/images/girl-3718537_640.jpg"
                   alt="Students studying together for academic success"
                   width={640}
                   height={426}
-                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-white/50">
@@ -93,15 +93,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* Column 3 - Image */}
-            <div className="space-y-6 animate-fade-in-right delay-300">
-              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5">
+            {/* Column 3 - Image + CTA */}
+            <div className="flex flex-col gap-6 animate-fade-in-right delay-300">
+              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 flex-1">
                 <Image
                   src="/images/student-3500990_640.jpg"
                   alt="College student focused on educational goals"
                   width={640}
                   height={426}
-                  className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <a
@@ -118,7 +118,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* More About Maxim Gorin - 3 column layout matching live site */}
+      {/* More About Maxim Gorin - 3 column layout */}
       <section id="more-about" className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-1/2 right-0 w-80 h-80 bg-gradient-to-tl from-accent/5 to-transparent rounded-full translate-x-1/2 -translate-y-1/2" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,19 +132,19 @@ export default function Home() {
               More information about the scholarship and the founder, Maxim Gorin, can be found below.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             {/* Column 1 - Image + LifeLine Ambulance */}
-            <div className="space-y-6 animate-fade-in-left">
-              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5">
+            <div className="flex flex-col gap-6 animate-fade-in-left">
+              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 h-72">
                 <Image
                   src="/images/pexels-keira-burton-6147276-scaled.jpg"
                   alt="Diverse group of students collaborating in a classroom"
                   width={640}
                   height={960}
-                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group">
+              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group flex-1">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/15 to-accent/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -158,8 +158,8 @@ export default function Home() {
             </div>
 
             {/* Column 2 - Growth + LifeLine Supply + Image */}
-            <div className="space-y-6 animate-fade-in-up delay-200">
-              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group">
+            <div className="flex flex-col gap-6 animate-fade-in-up delay-200">
+              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group flex-1">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -170,7 +170,7 @@ export default function Home() {
                   Over the next two decades, LifeLine entered into long-term growth while continually developing essential partnerships with hospitals, insurance companies, managed care groups, nursing facilities, and other care providers in Los Angeles and Orange County.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group">
+              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group flex-1">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/15 to-green-500/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -181,20 +181,20 @@ export default function Home() {
                   Built from the need to support Lifeline&apos;s growing operations, clients, and the community, Maxim expanded Lifeline&apos;s operations to include Lifeline Supply. He partnered with a manufacturer to develop and supply FDA-approved sanitizing wipes, hand sanitizer, and various other critical PPE needed for Lifeline employees and the community. LifeLine Supply focuses on providing high-quality, FDA-approved products immediately accessible within Los Angeles and Orange Counties.
                 </p>
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5">
+              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 h-72">
                 <Image
                   src="/images/pexels-pixabay-267885-scaled.jpg"
                   alt="Modern classroom environment supporting higher education"
                   width={640}
                   height={426}
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </div>
 
-            {/* Column 3 - LifeLine Today */}
-            <div className="space-y-6 animate-fade-in-right delay-300">
-              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group">
+            {/* Column 3 - LifeLine Today + Stats */}
+            <div className="flex flex-col gap-6 animate-fade-in-right delay-300">
+              <div className="bg-gradient-to-br from-section-bg to-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 group flex-1">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-light/15 to-primary-light/5 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <svg className="w-6 h-6 text-primary-light" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -205,7 +205,7 @@ export default function Home() {
                   Today, LifeLine&apos;s fleet of 70 ambulances and over 300 employees offers 24/7 high acuity patient care, basic life support, and critical care transport with a dedication to excellence in all aspects of healthcare.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-primary-dark to-primary rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+              <div className="bg-gradient-to-br from-primary-dark to-primary rounded-2xl p-8 text-white shadow-xl relative overflow-hidden flex-1">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-full -translate-y-1/2 translate-x-1/2" />
                 <div className="relative">
                   <p className="text-white/60 text-sm uppercase tracking-wider font-medium mb-2">Founded</p>
@@ -233,18 +233,18 @@ export default function Home() {
           </div>
 
           {/* Row 1: Library image + Award Amount */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mb-10">
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left min-h-[320px]">
               <Image
                 src="/images/library-869061_1280.jpg"
                 alt="University library representing educational opportunities"
                 width={1280}
                 height={853}
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="animate-fade-in-right">
-              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100">
+            <div className="animate-fade-in-right flex">
+              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 flex flex-col justify-center w-full">
                 <div className="flex items-center gap-5 mb-6">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-accent-light flex items-center justify-center shrink-0 shadow-lg shadow-accent/20">
                     <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -264,9 +264,9 @@ export default function Home() {
           </div>
 
           {/* Row 2: Deadline + Library image */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-            <div className="animate-fade-in-left order-2 lg:order-1">
-              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mb-10">
+            <div className="animate-fade-in-left order-2 lg:order-1 flex">
+              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 flex flex-col justify-center w-full">
                 <div className="flex items-center gap-5 mb-6">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
                     <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -283,30 +283,30 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-right order-1 lg:order-2">
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-right order-1 lg:order-2 min-h-[320px]">
               <Image
                 src="/images/library-5612441_640.jpg"
                 alt="Students studying in a modern library environment"
                 width={640}
                 height={426}
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
 
           {/* Row 3: Dawn image + Eligibility Requirements */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left min-h-[320px]">
               <Image
                 src="/images/dawn-1840298_640.jpg"
                 alt="Sunrise symbolizing new beginnings and educational opportunities"
                 width={640}
                 height={426}
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="animate-fade-in-right">
-              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100">
+            <div className="animate-fade-in-right flex">
+              <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 flex flex-col justify-center w-full">
                 <h3 className="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
                   <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shrink-0">
                     <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -351,14 +351,14 @@ export default function Home() {
             </h2>
             <div className="accent-line mx-auto" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left min-h-[400px]">
               <Image
                 src="/images/dawn-1840298_640.jpg"
                 alt="Sunrise symbolizing new beginnings and educational opportunities"
                 width={640}
                 height={426}
-                className="w-full h-full min-h-[400px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="relative animate-fade-in-right flex">
@@ -445,7 +445,7 @@ export default function Home() {
       {/* Application Closed Notice */}
       <section id="application-form" className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-1/2 w-96 h-96 bg-gradient-to-b from-primary/3 to-transparent rounded-full -translate-x-1/2 -translate-y-1/2" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in-up">
             <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-3">Apply</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">

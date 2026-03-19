@@ -14,12 +14,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* About */}
           <div>
-            <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent-light flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
-                </svg>
-              </div>
+            <h3 className="text-lg font-bold mb-4 flex items-center gap-2.5">
+              <svg viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                <path d="M2 6C2 4.895 2.895 4 4 4h24c1.105 0 2 .895 2 2v14c0 5.523-6.268 10-13 12C10.268 30 2 25.523 2 20V6z" fill="url(#footer-shield)"/>
+                <path d="M16 10L6 15l10 5 10-5-10-5z" fill="#f59e0b" opacity="0.9"/>
+                <path d="M10 16.5v4c0 1.5 2.686 3 6 3s6-1.5 6-3v-4" stroke="#fbbf24" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                <line x1="26" y1="15" x2="26" y2="22" stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"/>
+                <circle cx="26" cy="22.5" r="1" fill="#fbbf24"/>
+                <defs>
+                  <linearGradient id="footer-shield" x1="2" y1="4" x2="30" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stopColor="rgba(255,255,255,0.15)"/>
+                    <stop offset="100%" stopColor="rgba(255,255,255,0.08)"/>
+                  </linearGradient>
+                </defs>
+              </svg>
               Max Gorin Scholarship
             </h3>
             <p className="text-white/60 text-sm leading-relaxed">
