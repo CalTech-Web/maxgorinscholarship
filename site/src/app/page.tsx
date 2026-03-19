@@ -151,8 +151,11 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">LifeLine Ambulance</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed mb-4">
                   In 2002 Maxim Gorin co-founded LifeLine Ambulance in Los Angeles County. In the early years, Maxim, a newly licensed emergency medical technician, frequently responded to calls himself, handled late-night dispatching, and implemented marketing efforts highlighting its mission; to serve and protect the community in emergencies.
+                </p>
+                <p className="text-foreground/70 leading-relaxed">
+                  Driven by a deep commitment to community health, Maxim built LifeLine from the ground up, navigating the challenges of the healthcare industry while maintaining a hands-on approach that set the company apart from its competitors.
                 </p>
               </div>
             </div>
@@ -201,8 +204,11 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">LifeLine Today</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed mb-4">
                   Today, LifeLine&apos;s fleet of 70 ambulances and over 300 employees offers 24/7 high acuity patient care, basic life support, and critical care transport with a dedication to excellence in all aspects of healthcare.
+                </p>
+                <p className="text-foreground/70 leading-relaxed">
+                  Under Maxim&apos;s leadership, LifeLine has become one of the most trusted emergency medical service providers in Southern California, known for rapid response times and compassionate patient care across diverse communities.
                 </p>
               </div>
               <div className="bg-gradient-to-br from-primary-dark to-primary rounded-2xl p-8 text-white shadow-xl relative overflow-hidden flex-1">
@@ -210,9 +216,23 @@ export default function Home() {
                 <div className="relative">
                   <p className="text-white/60 text-sm uppercase tracking-wider font-medium mb-2">Founded</p>
                   <p className="text-4xl font-bold text-accent mb-3">2002</p>
-                  <p className="text-white/70 text-sm leading-relaxed">
+                  <p className="text-white/70 text-sm leading-relaxed mb-3">
                     LifeLine Ambulance has served Los Angeles and Orange County communities for over two decades.
                   </p>
+                  <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-white/10">
+                    <div className="flex items-center gap-2">
+                      <span className="text-accent font-bold text-lg">70+</span>
+                      <span className="text-white/60 text-sm">Ambulances</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-accent font-bold text-lg">300+</span>
+                      <span className="text-white/60 text-sm">Employees</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-accent font-bold text-lg">24/7</span>
+                      <span className="text-white/60 text-sm">Patient Care</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
