@@ -374,10 +374,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
             <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 card-hover ring-1 ring-black/5 animate-fade-in-left min-h-[400px]">
               <Image
-                src="/images/dawn-1840298_640.jpg"
-                alt="Sunrise symbolizing new beginnings and educational opportunities"
-                width={640}
-                height={426}
+                src="/images/pexels-essay-topic.jpg"
+                alt="Student writing a scholarship essay"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
