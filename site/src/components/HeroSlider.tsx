@@ -52,12 +52,13 @@ export default function HeroSlider() {
         </div>
       ))}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+      {/* Gradient overlay for text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
 
-      {/* Decorative elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_40%,rgba(37,99,235,0.2),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_60%,rgba(245,158,11,0.1),transparent_50%)]" />
+      {/* Decorative color tints */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_40%,rgba(15,39,68,0.5),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_60%,rgba(245,158,11,0.08),transparent_50%)]" />
 
       {/* Content */}
       <div className="relative h-full flex items-center">
