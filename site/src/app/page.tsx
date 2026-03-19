@@ -283,23 +283,23 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Row 2: Deadline + Library image */}
+          {/* Row 2: Status + Library image */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mb-10">
             <div className="animate-fade-in-left order-2 lg:order-1 flex">
               <div className="bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl transition-all duration-500 card-hover border border-gray-100 flex flex-col justify-center w-full">
                 <div className="flex items-center gap-5 mb-6">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
                     <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-foreground/50 font-medium uppercase tracking-wide">Scholarship Deadline</p>
-                    <p className="text-4xl font-bold gradient-text">June 30, 2023</p>
+                    <p className="text-sm text-foreground/50 font-medium uppercase tracking-wide">Application Status</p>
+                    <p className="text-4xl font-bold gradient-text">Coming Soon</p>
                   </div>
                 </div>
                 <p className="text-foreground/65 leading-relaxed">
-                  All applications must be submitted by the deadline. Late submissions will not be considered for the current scholarship cycle.
+                  The scholarship is not currently accepting applications. Please check back regularly for updates on when the next application cycle opens. Follow our announcements so you do not miss the opportunity to apply.
                 </p>
               </div>
             </div>
