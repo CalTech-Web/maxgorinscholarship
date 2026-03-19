@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const slides = [
   {
@@ -44,11 +45,20 @@ export default function HeroSlider() {
           }`}
         >
           <div
-            className={`absolute inset-0 bg-cover bg-center ${
+            className={`absolute inset-0 ${
               i === current ? "animate-ken-burns" : ""
             }`}
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
+          >
+            <Image
+              src={slide.image}
+              alt={`${slide.heading} ${slide.headingAccent}`}
+              fill
+              className="object-cover object-center"
+              priority={i === 0}
+              sizes="100vw"
+              quality={85}
+            />
+          </div>
         </div>
       ))}
 

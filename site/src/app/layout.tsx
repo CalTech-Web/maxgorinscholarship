@@ -65,6 +65,28 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "Max Gorin Scholarship",
+  description:
+    "Founded in 2021, the Max Gorin Scholarship awards one applicant $1,000 for their educational expenses.",
+  url: "https://maxgorinscholarship.com",
+  foundingDate: "2021",
+  founder: {
+    "@type": "Person",
+    name: "Maxim Gorin",
+  },
+  areaServed: "United States",
+  email: "scholarship@maxgorinscholarship.com",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover" as const,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,6 +97,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
